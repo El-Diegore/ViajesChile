@@ -1,82 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/23addf6c42.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/23addf6c42.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Viajes Chile</title>
-</head>
-<body>
-<header>
-  <nav class="navbar navbar-expand-lg bg-transparent px-5 fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand text-light" href="#">
-          <img src="./assets/img/viajes.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-          Viajes Chile
-        </a>
-        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-transparent px-5 fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#">
+            <img
+              src="./assets/img/viajes.svg"
+              alt="Logo"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            Viajes Chile
+          </a>
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse text-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item d-none d-sm-block">
+                <a class="nav-link text-light" href="#QuienesSomos"
+                  >Quienes Somos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#destacados">Destacados</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light"
+                  href="#contacto"
+                  aria-disabled="true"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Carrusel -->
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/img/carousel1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/img/carousel2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/img/carousel3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
         </button>
-        <div class="collapse navbar-collapse text-end" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active text-light" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item d-none d-sm-block">
-              <a class="nav-link text-light" href="#QuienesSomos">Quienes Somos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#destacados">Destacados</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#contacto"aria-disabled="true">Contacto</a>
-            </li>
-          </ul>
-        </div>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </nav>
-    <!-- Carrusel -->
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./assets/img/carousel1.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/img/carousel2.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/img/carousel3.jpg" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>  
+    </header>
 
-</header>
-  
-    <section id="QuienesSomos" class="container-fluid bg-black d-none d-sm-block">
+    <section
+      id="QuienesSomos"
+      class="container-fluid bg-black d-none d-sm-block"
+    >
       <div class="container text-light">
         <h1 class="text-center py-5">¿Quienes somos?</h1>
         <div class="row">
           <div class="col">
-                <div class="bg-info text-center py-1 mb-3">
-                  <i class="fa-solid fa-plane fa-lg"></i>
-                </div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus iusto aut vero esse earum sed est eaque dicta ea ipsum praesentium exercitationem assumenda doloribus similique animi nesciunt, labore voluptatum omnis ullam dolor laboriosam repellendus commodi in eos? Totam, asperiores excepturi neque magnam beatae voluptas quidem soluta quasi assumenda cupiditate dolorum!
+            <div class="bg-info text-center py-1 mb-3">
+              <i class="fa-solid fa-plane fa-lg"></i>
+            </div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus iusto
+            aut vero esse earum sed est eaque dicta ea ipsum praesentium
+            exercitationem assumenda doloribus similique animi nesciunt, labore
+            voluptatum omnis ullam dolor laboriosam repellendus commodi in eos?
+            Totam, asperiores excepturi neque magnam beatae voluptas quidem
+            soluta quasi assumenda cupiditate dolorum!
           </div>
           <div class="col">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus iusto aut vero esse earum sed est eaque dicta ea ipsum praesentium exercitationem assumenda doloribus similique animi nesciunt, labore voluptatum omnis ullam dolor laboriosam repellendus commodi in eos? Totam, asperiores excepturi neque magnam beatae voluptas quidem soluta quasi assumenda cupiditate dolorum! 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus iusto
+            aut vero esse earum sed est eaque dicta ea ipsum praesentium
+            exercitationem assumenda doloribus similique animi nesciunt, labore
+            voluptatum omnis ullam dolor laboriosam repellendus commodi in eos?
+            Totam, asperiores excepturi neque magnam beatae voluptas quidem
+            soluta quasi assumenda cupiditate dolorum!
             <div class="bg-info text-center py-1 mt-3">
               <i class="fa-solid fa-mountain fa-lg"></i>
             </div>
@@ -85,99 +159,181 @@
             <div class="bg-info text-center py-1 mb-3">
               <i class="fa-solid fa-route fa-lg"></i>
             </div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus iusto aut vero esse earum sed est eaque dicta ea ipsum praesentium exercitationem assumenda doloribus similique animi nesciunt, labore voluptatum omnis ullam dolor laboriosam repellendus commodi in eos? Totam, asperiores excepturi neque magnam beatae voluptas quidem soluta quasi assumenda cupiditate dolorum!</div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus iusto
+            aut vero esse earum sed est eaque dicta ea ipsum praesentium
+            exercitationem assumenda doloribus similique animi nesciunt, labore
+            voluptatum omnis ullam dolor laboriosam repellendus commodi in eos?
+            Totam, asperiores excepturi neque magnam beatae voluptas quidem
+            soluta quasi assumenda cupiditate dolorum!
+          </div>
         </div>
       </div>
     </section>
     <section id="destacados" class="container-fluid bg-black text-light">
-      <h2 class="text-center py-5">
-        Destacados
-      </h2>
+      <h2 class="text-center py-5">Destacados</h2>
       <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-between">
-          <div class="card col-3 text-bg-info text-light p-0 border-secondary mx-auto mx-auto" style="width: 18rem;">
-            <img src="./assets/img/card1.jpg" class="card-img-top img-fluid" alt="...">
+          <div
+            class="card col-3 text-bg-info text-light p-0 border-secondary mx-auto mx-auto"
+            style="width: 18rem"
+          >
+            <img
+              src="./assets/img/card1.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
             <div class="card-body">
-                  <h5 class="card-title">Lorem, ipsum dolor.</h5>
+              <h5 class="card-title">Lorem, ipsum dolor.</h5>
 
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
             </div>
           </div>
-          <div class="card col-3 text-bg-info text-light p-0 border-secondary mx-auto" style="width: 18rem;">
-            <img src="./assets/img/card2.jpg" class="card-img-top img-fluid" alt="...">
+          <div
+            class="card col-3 text-bg-info text-light p-0 border-secondary mx-auto"
+            style="width: 18rem"
+          >
+            <img
+              src="./assets/img/card2.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
             <div class="card-body">
-                  <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+              <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
 
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
             </div>
           </div>
-          <div class="card col-3 text-bg-info text-light p-0 border-secondary mx-auto" style="width: 18rem;">
-            <img src="./assets/img/card3.jpg" class="card-img-top img-fluid" alt="...">
+          <div
+            class="card col-3 text-bg-info text-light p-0 border-secondary mx-auto"
+            style="width: 18rem"
+          >
+            <img
+              src="./assets/img/card3.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
             <div class="card-body">
-                  <h5 class="card-title">Lorem ipsum dolor sit amet consectetur.</h5>
+              <h5 class="card-title">
+                Lorem ipsum dolor sit amet consectetur.
+              </h5>
 
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
             </div>
           </div>
-          <div class="card text-bg-info text-light p-0 border-secondary mx-auto" style="width: 18rem;">
-            <img src="./assets/img/card4.jpg" class="card-img-top img-fluid" alt="...">
+          <div
+            class="card text-bg-info text-light p-0 border-secondary mx-auto"
+            style="width: 18rem"
+          >
+            <img
+              src="./assets/img/card4.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
             <div class="card-body">
-                  <h5 class="card-title">Lorem ipsum dolor sit.</h5>
+              <h5 class="card-title">Lorem ipsum dolor sit.</h5>
 
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
             </div>
           </div>
         </div>
-       
       </div>
     </section>
     <section id="contacto" class="container-fluid bg-black text-light py-5">
-      
-        <h2 class="text-center py-3">
-          Contacto
-        </h2>
-        <div class="container">
-          
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Apellido</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>    
-            
-            <button id="btnEnviar" type="submit" class="btn btn-info text-light"
-            data-bs-toggle="tooltip" 
-                    data-bs-placement="bottom" 
-                    data-bs-custom-class="custom-tooltip"
-                    data-bs-title="Presiona para enviar y nos contactaremos contigo">Enviar</button>
-          
+      <h2 class="text-center py-3">Contacto</h2>
+      <div class="container">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
         </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Apellido</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Mensaje</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <button
+          id="btnEnviar"
+          type="submit"
+          class="btn btn-info text-light"
+          data-bs-toggle="tooltip"
+          data-bs-placement="bottom"
+          data-bs-custom-class="custom-tooltip"
+          data-bs-title="Presiona para enviar y nos contactaremos contigo"
+        >
+          Enviar
+        </button>
+      </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="./assets/js/script.js"></script>
     <script>
-      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))  
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
     </script>
-</body>
-<footer class="container-fluid bg-info text-light py-3">
-  <div class="row text-center">
-    <div class="col">VIAJES CHILE</div>
-    <div class="col">
-      <i class="fa-brands fa-square-github fa-lg mx-1"></i>
-      <i class="fa-brands fa-linkedin fa-lg mx-1"></i>
-      <i class="fa-brands fa-square-twitter fa-lg mx-1"></i>
-      <i class="fa-brands fa-square-facebook fa-lg mx-1"></i>
+  </body>
+  <footer class="container-fluid bg-info text-light py-3">
+    <div class="row text-center">
+      <div class="col">VIAJES CHILE</div>
+      <div class="col">
+        <i class="fa-brands fa-square-github fa-lg mx-1"></i>
+        <i class="fa-brands fa-linkedin fa-lg mx-1"></i>
+        <i class="fa-brands fa-square-twitter fa-lg mx-1"></i>
+        <i class="fa-brands fa-square-facebook fa-lg mx-1"></i>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 </html>
