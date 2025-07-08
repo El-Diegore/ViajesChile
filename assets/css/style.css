@@ -9,6 +9,10 @@ body{
 .nav{
     position: absolute;
 }
+.carousel-item img{
+    height: 130vh;
+    object-fit: cover;
+}
 .card img{
     height: 200px;
 }
