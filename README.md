@@ -11,4 +11,4 @@ Iconos de Font Awesome utilizados:
 - fa-square-facebook
 
 cards, carrusel y formulario creado con Bootstrap 5.3.3
-- [Link Web](https://el-diegore.github.io/ViajesChile/)
+- 🌐 [Ir al sitio](https://el-diegore.github.io/ViajesChile/)
