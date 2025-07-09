@@ -250,50 +250,62 @@
         </div>
       </div>
     </section>
+    <!-- Form -->
     <section id="contacto" class="container-fluid bg-black text-light py-5">
       <h2 class="text-center py-3">Contacto</h2>
-      <div class="container">
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Nombre</label>
-          <input
-            type="text"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Apellido</label>
-          <input
-            type="text"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label"
-            >Mensaje</label
-          >
-          <textarea
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="3"
-          ></textarea>
-        </div>
+      <form action="#">
+        <div class="container">
+          <div class="mb-3">
+            <label for="InputName" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="InputName"
+              aria-describedby="nameHelp" required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="InputLastName" class="form-label">Apellido</label>
+            <input
+              type="text"
+              class="form-control"
+              id="InputLastName"
+              aria-describedby="LastNameHelp" required
+            />
+          </div>
+            <div class="mb-3">
+            <label for="InputEmail" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="InputEmail"
+              aria-describedby="emailHelp" required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="FormControlTextarea" class="form-label"
+              >Mensaje</label
+            >
+            <textarea
+              class="form-control"
+              id="FormControlTextarea"
+              rows="3" required
+            ></textarea>
+          </div>
 
-        <button
-          id="btnEnviar"
-          type="submit"
-          class="btn btn-info text-light"
-          data-bs-toggle="tooltip"
-          data-bs-placement="bottom"
-          data-bs-custom-class="custom-tooltip"
-          data-bs-title="Presiona para enviar y nos contactaremos contigo"
-        >
-          Enviar
-        </button>
-      </div>
+          <button
+            id="btnEnviar"
+            type="submit"
+            class="btn btn-info text-light"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Presiona para enviar y nos contactaremos contigo"
+          >
+            Enviar
+          </button>
+        </div>
+      </form>
     </section>
       <footer class="container-fluid bg-info text-light py-3">
     <div class="row text-center">
@@ -326,8 +338,8 @@
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/js/script.js"></script>
-    <script>
+<!--     <script src="./assets/js/script.js"></script>
+ -->    <script>
       const tooltipTriggerList = document.querySelectorAll(
         '[data-bs-toggle="tooltip"]'
       );
