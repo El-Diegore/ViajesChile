@@ -256,42 +256,42 @@
       <div class="container">
         <div class="row justify-content-md-center">
           <div class="col col-6">
-            <form action="#">
+            <form  id="formContact" action="https://formsubmit.co/di.pip.dev@gmail.com" method="POST">
               <div class="mb-3">
-              <label for="InputName" class="form-label">Nombre</label>
+              <label for="inputName" class="form-label">Nombre</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="InputName"
-                  aria-describedby="nameHelp" required
+                  id="inputName"
+                  aria-describedby="nameHelp" required name="name"
                 />
               </div>
               <div class="mb-3">
-                <label for="InputLastName" class="form-label">Apellido</label>
+                <label for="inputLastName" class="form-label">Apellido</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="InputLastName"
-                  aria-describedby="LastNameHelp" required
+                  id="inputLastName"
+                  aria-describedby="LastNameHelp" required name="lastName"
                 />
               </div>
                 <div class="mb-3">
-                <label for="InputEmail" class="form-label">Email</label>
+                <label for="inputEmail" class="form-label">Email</label>
                 <input
                   type="email"
                   class="form-control"
-                  id="InputEmail"
-                  aria-describedby="emailHelp" required
+                  id="inputEmail"
+                  aria-describedby="emailHelp" required name="email"
                 />
               </div>
               <div class="mb-3">
-                <label for="FormControlTextarea" class="form-label"
+                <label for="formControlTextarea" class="form-label"
                   >Mensaje</label
                 >
                 <textarea
                   class="form-control"
-                  id="FormControlTextarea"
-                  rows="3" required
+                  id="formControlTextarea"
+                  rows="3" required name="message"
                 ></textarea>
               </div>
     
