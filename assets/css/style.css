@@ -24,3 +24,11 @@ html body{
 .card-title{
     text-align: center;
 }
+.tooltip.custom-tooltip {
+  --bs-tooltip-bg: #cff4fc;/* Color de fondo */
+  --bs-tooltip-color: #000; /* Color de las letras */
+  --bs-tooltip-border-radius: 8px; /* Bordes redondeados */
+  --bs-tooltip-padding-x: 15px; /* Padding horizontal */
+  --bs-tooltip-padding-y: 8px; /* Padding vertical */
+  --bs-tooltip-font-size: 14px; /* Tamaño de la fuente */
+}
